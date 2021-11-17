@@ -1,0 +1,43 @@
+html {
+  display: block;
+  font-size: 100%;
+  font-family: Open Sans, sans-serif;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+html,
+p strong {
+  color: #191e1e;
+}
+#nav {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: relative;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #ebf2f2;
+}
+.nav-inner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+.springlogo {
+  display: block;
+  height: 48px;
+  max-width: 250px;
+}
