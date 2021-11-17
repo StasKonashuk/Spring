@@ -41,3 +41,36 @@ a {
   height: 48px;
   max-width: 250px;
 }
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  width: 705px;
+  margin-left: 40px;
+}
+.has-menu {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  cursor: default;
+}
+.nav-items > li > a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+.nav-items > li > a:hover {
+  color: #6db33f;
+}
+.nav-arrow {
+  transform: rotate(45deg) translateY(-6px);
+  -webkit-transform: rotate(45deg) translateY(-6px);
+  border: solid #191e1e;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 5px;
+}
