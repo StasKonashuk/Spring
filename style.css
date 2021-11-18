@@ -69,7 +69,7 @@ a {
 .nav-items li {
   position: relative;
 }
-.nav-items>li:hover .menu-list-container{
+.nav-items > li:hover .menu-list-container {
   display: block;
 }
 
@@ -82,17 +82,17 @@ a {
   padding: 3px;
   margin-left: 5px;
 }
-.menu-list-container{
+.menu-list-container {
   display: none;
   position: absolute;
   left: 0;
   top: 0;
   padding-top: 41px;
 }
-.menu-list-container:hover .menu-list{
+.menu-list-container:hover .menu-list {
   box-shadow: 0 5px 30px 0 rgb(108 135 135 / 50%);
 }
-.menu-list{
+.menu-list {
   list-style: none;
   box-sizing: border-box;
   width: 230px;
@@ -103,7 +103,7 @@ a {
   margin: 0;
   background-color: #fff;
 }
-.menu-list>li{
+.menu-list > li {
   background-color: #fff;
   position: relative;
   font-weight: 500;
@@ -119,61 +119,61 @@ a {
   color: #6db33f;
   transition: all 0.3s ease-out;
 }
-.blue-link{
+.blue-link {
   color: blue;
 }
-.blue-link:hover{
+.blue-link:hover {
   color: #6db33f;
 }
-.uppercase-text{
+.uppercase-text {
   margin-top: 30px;
   font-weight: 500;
-  font-size: .8125rem;
+  font-size: 0.8125rem;
   text-transform: uppercase;
 }
-.external-link-icon{
-    height: 12px;
-    width: 12px;
-    margin-left: 5px
+.external-link-icon {
+  height: 12px;
+  width: 12px;
+  margin-left: 5px;
 }
-.entry-container{
+.entry-container {
   max-width: 1140px;
   padding: 80px 20px 0px 20px;
   margin: 0 auto;
 }
-.entry-title{
-  display:block;
-  font-family: Metropolis,sans-serif;
+.entry-title {
+  display: block;
+  font-family: Metropolis, sans-serif;
   font-weight: 700;
   font-size: 3.75rem;
   margin-bottom: 10px;
-  margin-top: .4em;
+  margin-top: 0.4em;
   color: #191e1e;
 }
-.entry-content{
+.entry-content {
   display: block;
   color: #333;
-  font-family: Metropolis,sans-serif;
+  font-family: Metropolis, sans-serif;
   font-size: 1.5rem;
   font-weight: 100;
   line-height: 1.7em;
   margin-bottom: 80px;
   max-width: 1040px;
 }
-.content-container{
+.content-container {
   display: block;
   background-color: #ebf2f2;
   padding: 50px 0;
 }
-.content{
+.proj-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 850px;
-  padding: 0 20px;
+  padding-left: 90px;
   margin: 0 auto;
 }
-.project-box{
+.project-box {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
@@ -189,28 +189,85 @@ a {
   margin-right: 5px;
   transform: translateY(0);
   box-shadow: none;
-  transition: all .2s;
+  transition: all 0.2s;
 }
-.project-box:hover{
+.project-box:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px 0 rgb(108 135 135 / 20%);
-  transition: all .2s,transform .2s;
+  transition: all 0.2s, transform 0.2s;
 }
-.proj-icon-box{
+.proj-icon-box {
   width: 18.5%;
 }
-.proj-icon{
+.proj-icon {
   height: 60px;
   max-width: 100%;
 }
-.proj-text{
+.proj-text-conteiner {
   display: block;
   width: 76.5%;
 }
-.proj-text-title{
+.proj-text-title {
   display: block;
-  font-family: Metropolis,sans-serif;
+  font-family: Metropolis, sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   margin: 0;
+}
+.proj-text{
+  line-height: 1.7em;
+}
+.attic-proj-content {
+  display: block;
+  margin-bottom: 100px;
+  border-top: 2px solid #191e1e;
+  padding-top: 20px;
+  max-width: 1100px;
+  margin: 90px auto 0;
+  
+}
+.attic-proj-title {
+  padding-bottom: 2rem;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  margin-top: 0.4em;
+  color: #191e1e;
+  font-family: Metropolis, sans-serif;
+  font-weight: 700;
+}
+.attic-proj-box-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.attic-proj-box {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s;
+  padding: 0;
+  margin: 0;
+  flex: 50%;
+  outline: none;
+  max-width: 50%;
+}
+.attic-proj-box:hover .attic-project-title{
+  text-decoration: underline;
+}
+.attic-project-text-container {
+  width: auto;
+  padding-right: 3rem;
+  padding-bottom: 0.6rem;
+}
+.attic-project-title {
+  color: #086dc3;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Metropolis,sans-serif;
+  font-weight: 700;
+}
+.attic-project-text{
+  margin-top: 5px;
+  line-height: 1.7em;
 }
