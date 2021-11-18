@@ -506,3 +506,62 @@ a {
   background: #6db33f;
   color: #fff;
 }
+.bottom-bottom-footer-container{
+  color: #999;
+  padding: 35px 0 60px;
+}
+.bottom-bottom-footer-content{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.springlogo-footer{
+  height: 48px;
+  max-width: 250px;
+}
+.spring-links{
+  max-width: 925px;
+  line-height: 1.5em;
+  font-size: .8125rem;
+}
+.spring-link{
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  transition: all .2s;
+}
+.spring-link:hover{
+  color: #086dc3;
+  text-decoration: underline;
+}
+.social-icons{
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  margin-left: 20px;
+  flex-shrink: 0;
+  height: 40px;
+}
+.cls-2{
+  fill: white;
+}
+#youtube-icon{
+  width: 40px;
+  height: 40px;
+}
+#github-icon{
+  width: 40px;
+  height: 40px;
+}
+#twitter-icon{
+  width: 40px;
+  height: 40px;
+}
+.social-icon:hover .cls-1{
+  fill: #6db33f;
+  transition: all .2s;
+}
+
+
