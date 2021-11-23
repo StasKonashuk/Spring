@@ -2,10 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <title>Spring | Projects</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
+    
     <header>
       <nav id="nav">
         <div class="nav-inner-container">
@@ -16,8 +20,12 @@
               alt="Spring"
             />
           </a>
-          <ul class="nav-items">
-            <li>
+          <div class="header-burger">
+            <span></span>
+          </div>
+          <div class="header-menu">
+            <ul class="nav-items">
+            <li class="has-menu-item">
               <div class="has-menu">
                 <span>Why Spring</span>
                 <div class="nav-arrow"></div>
@@ -51,7 +59,7 @@
                 </ul>
               </div>
             </li>
-            <li>
+            <li class="has-menu-item">
               <div class="has-menu">
                 <span>Learn</span>
                 <div class="nav-arrow"></div>
@@ -73,7 +81,7 @@
                 </ul>
               </div>
             </li>
-            <li>
+            <li class="has-menu-item">
               <div class="has-menu">
                 <span>Projects</span>
                 <div class="nav-arrow"></div>
@@ -158,7 +166,7 @@
             <li>
               <a>Support</a>
             </li>
-            <li>
+            <li class="has-menu-item">
               <div class="has-menu">
                 <span>Community</span>
                 <div class="nav-arrow"></div>
@@ -178,10 +186,11 @@
               </div>
             </li>
           </ul>
+          </div>  
         </div>
       </nav>
     </header>
-    <div>
+    <div class="hero">
       <div class="entry-container">
         <h1 class="entry-title">Projects</h1>
         <p class="entry-content">
@@ -193,7 +202,8 @@
       </div>
       <div class="content-container">
         <div class="proj-content">
-          <a class="project-box" href="#">
+          <div class="project-box-container">
+            <a class="project-box" href="#">
             <div class="proj-icon-box">
               <img
                 class="proj-icon"
@@ -561,6 +571,8 @@
               </p>
             </div>
           </a>
+          </div>
+          
         </div>
         <div class="attic-proj-content">
           <h2 class="attic-proj-title">Projects in the Attic</h2>
