@@ -23,7 +23,7 @@ header {
   margin: 0;
   padding: 0;
 }
-#nav {
+.nav {
   display: block;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -565,15 +565,15 @@ a {
 .cls-2 {
   fill: white;
 }
-#youtube-icon {
+.youtube-icon {
   width: 40px;
   height: 40px;
 }
-#github-icon {
+.github-icon {
   width: 40px;
   height: 40px;
 }
-#twitter-icon {
+.twitter-icon {
   width: 40px;
   height: 40px;
 }
