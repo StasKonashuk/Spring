@@ -1,8 +1,8 @@
-let header_burger = document.querySelector('.header-burger');
-let header_menu = document.querySelector('.header-menu');
-let body = document.querySelector('body');
-header_burger.onclick = function(){
-  header_burger.classList.toggle('active');
-  header_menu.classList.toggle('active');
+const headerBurger = document.querySelector('.header-burger');
+const headerMenu = document.querySelector('.header-menu');
+const body = document.querySelector('body');
+headerBurger.onclick = function(){
+  headerBurger.classList.toggle('active');
+  headerMenu.classList.toggle('active');
   body.classList.toggle('lock');
 }
