@@ -565,21 +565,13 @@ a {
 .cls-2 {
   fill: white;
 }
-.youtube-icon {
-  width: 40px;
-  height: 40px;
-}
-.github-icon {
-  width: 40px;
-  height: 40px;
-}
-.twitter-icon {
-  width: 40px;
-  height: 40px;
-}
-.social-icon:hover .cls-1 {
+.social-icon-container:hover .cls-1 {
   fill: #6db33f;
   transition: all 0.2s;
+}
+.social-icon{
+  width: 40px;
+  height: 40px;
 }
 @media (max-width: 1100px) {
   .springlogo {
