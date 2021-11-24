@@ -586,16 +586,6 @@ a {
     height: 30px;
   }
 }
-@media (max-width: 800px) {
-  .project-box-container {
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-  }
-  .project-box {
-    width: 100%;
-  }
-}
 @media (max-width: 900px) {
   body .lock {
     overflow: hidden;
@@ -661,6 +651,8 @@ a {
     transform: scale(0);
   }
   .header-menu {
+    display: block;
+    overflow-y: scroll;
     position: fixed;
     top: -500%;
     left: 0;
@@ -753,6 +745,19 @@ a {
   .menu-list > li > a:hover {
     color: #6db33f;
     transition: all 0.3s ease-out;
+  }
+  .attic-proj-content{
+    padding: 20px 15px 0px 15px;
+  }
+}
+@media (max-width: 800px) {
+  .project-box-container {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+  .project-box {
+    width: 100%;
   }
 }
 @media (max-width: 600px) {
