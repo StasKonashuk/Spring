@@ -1,4 +1,3 @@
-console.log(NAV_ITEMS)
 class NavItems {
   render() {
     let htmlCatalog = "";
