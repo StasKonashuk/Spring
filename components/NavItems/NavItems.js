@@ -15,14 +15,14 @@ class NavItems {
             case 'View all Projects':
             htmlCatalog += `
             <li>
-            <a href="#" class="blue-link">${item}</a>
+              <a href="#" class="blue-link">${item}</a>
             </li>
             `
             break;
             case 'Development Tools':
             htmlCatalog += `
             <li class="uppercase-text">
-               ${item}
+              ${item}
             </li>
             `
             break;
@@ -64,6 +64,8 @@ class NavItems {
                         stroke-width="2"
                       ></line>
                     </svg>
+                  </a>
+                </li>
             `
             break;
             default:
@@ -93,7 +95,6 @@ class NavItems {
       <ul class="nav-items">
             ${htmlCatalog}
       </ul>`
-      console.log(html)
     for (let i = 0; i < ROOT_NAV_ITEMS.length; i++) {
       ROOT_NAV_ITEMS[i].innerHTML = html;
     }
