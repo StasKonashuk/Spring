@@ -1,0 +1,1 @@
+const ROOT_PROJECTS = document.getElementsByClassName('proj-content')
