@@ -1,8 +1,29 @@
-const headerBurger = document.querySelector('.header-burger');
-const headerMenu = document.querySelector('.header-menu');
-const body = document.querySelector('body');
-headerBurger.onclick = function(){
-  headerBurger.classList.toggle('active');
-  headerMenu.classList.toggle('active');
-  body.classList.toggle('lock');
+'use strict'
+
+const isMobile = {
+  Android: function () {
+    return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry: function () {
+    return navigator.userAgent.match(/BlackBerry/i);
+  },
+  IOS: function () {
+    return navigator.userAgent.match(/Iphone|iPad|iPod/i);
+  },
+  Opera: function () {
+    return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows: function () {
+    return navigator.userAgent.match(/IEMobile/i);
+  },
+  any: function () {
+    return (
+      isMobile.Android() ||
+      isMobile.BlackBerry() ||
+      isMobile.IOS() ||
+      isMobile.Opera() ||
+      isMobile.Windows()
+    );
+  }
 }
+
