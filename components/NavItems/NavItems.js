@@ -4,11 +4,10 @@ class NavItems {
     NAV_ITEMS.forEach(({title, submenu}) => {
       if(submenu.length !== 0){
         htmlCatalog += `
-        <li class="has-menu-item">
-            <span>${title}</span>
-            <div class="nav-arrow"></div>
-          <div class="menu-list-container">
-            <ul class="menu-list">
+        <li class="nav-item">
+          <a href="#" class="menu-link-has-submenu">${title}</a>
+          <span class="menu-arrow"></span>
+          <ul class="menu-sublist">
         `
         submenu.forEach((item) => {
           switch(item){
@@ -29,9 +28,9 @@ class NavItems {
             case 'Spring Tools 4':
             htmlCatalog += `
             <li>
-              <a href="#">${item}</a>
+              <a href="#" class="menu-sublink">${item}</a>
             </li>
-                <li>
+                <li class="menu-sublink">
                   <a href="#">
                     Spring Initializr
                     <svg
@@ -71,7 +70,7 @@ class NavItems {
             default:
             htmlCatalog += `
             <li>
-              <a href="#">${item}</a>
+              <a href="#" class="menu-sublink">${item}</a>
             </li>
             `;
             break;
@@ -79,22 +78,27 @@ class NavItems {
         })
         htmlCatalog += `
             </ul>
-          </div>
         </li>
         `
       }else{
         htmlCatalog += `
         <li>
-        <a>${title}</a>
+          <a href="#" class="menu-link">${title}</a>
         </li>
         `
       }
     }
     )
     const html = `
-      <ul class="nav-items">
-            ${htmlCatalog}
-      </ul>`
+      <div class="header-burger">
+        <span></span>
+      </div>
+      <nav class="menu-body">
+        <ul class="nav-items">
+          ${htmlCatalog}
+        </ul>
+      </nav>
+    `
     for (let i = 0; i < ROOT_NAV_ITEMS.length; i++) {
       ROOT_NAV_ITEMS[i].innerHTML = html;
     }
