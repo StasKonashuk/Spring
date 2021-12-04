@@ -220,7 +220,10 @@ body._touch .nav-items > li._active .menu-arrow {
   max-width: 1040px;
 }
 .content-container {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: var(--div-background-color);
   padding: 50px 0;
   margin: 0;
@@ -234,11 +237,11 @@ body._touch .nav-items > li._active .menu-arrow {
   align-items: center;
 }
 .proj-input{
-  margin: 5px 0 20px 0;
+  margin-bottom: 35px;
   padding:10px;
   border: 2px solid #eee;
   border-radius:10px;
-  width:50%;
+  width:30%;
   font-size: 1rem;
   font-family: Open Sans, sans-serif !important;
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
@@ -293,6 +296,10 @@ body._touch .nav-items > li._active .menu-arrow {
 }
 .proj-text {
   line-height: 1.7em;
+}
+.no-results{
+  font-family: Metropolis, sans-serif;
+  font-size: 4rem;
 }
 .attic-proj-content {
   display: block;
