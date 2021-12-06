@@ -193,6 +193,5 @@ const NAV_ITEMS = [
       'Events',
       'Team'
     ]
-  },
-  
+  }
 ]

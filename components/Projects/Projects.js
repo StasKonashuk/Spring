@@ -1,8 +1,6 @@
-class Projects {
-  render() {
-    let htmlCatalog = "";
-    PROJECTS.forEach(({ id, imageUrl, title, text }) => {
-      htmlCatalog += `
+(function projectsRender() {
+    let htmlCatalog = PROJECTS.reduce((html, {imageUrl, title, text}) => {
+      return html += `
         <a class="project-box">
           <div class="proj-icon-box">
             <img class="proj-icon" src=${imageUrl}/>
@@ -13,17 +11,14 @@ class Projects {
           </div>
         </a>
       `;
-    });
+    }, ``);
     const html = `
       <div class="project-box-container">
         ${htmlCatalog}
       </div>
     `;
-    for (let i = 0; i < ROOT_PROJECTS.length; i++) {
-      ROOT_PROJECTS[i].innerHTML = html;
-    }
-  }
-}
+    Array.from(ROOT_PROJECTS).forEach(item => {
+      item.innerHTML = html
+    })
+})()
 
-const projectsPage = new Projects();
-projectsPage.render();
